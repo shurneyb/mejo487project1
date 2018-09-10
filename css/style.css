@@ -1,0 +1,146 @@
+@supports (grid-area:auto){
+
+  /* Grids */
+    .navbars{
+      display: grid;
+      grid-template-rows: 40px 110px;
+      grid-template-areas: 
+      'tool'
+      'navb';
+    }
+    .content{
+      width: 85%;
+      margin: auto;
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 75px 20px 35px 300px 450px 200px;
+      grid-template-areas: 
+      'sbar sbar sbar'
+      '.    .    .   '
+      'anno anno anno'
+      'task anl1 anl1'
+      'reco anl2 anl2'
+      'foot foot foot'
+    }
+  
+  /* Toolbar */
+    .toolbar{
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      grid-area: tool;
+      background: linear-gradient(#2498f4, #208ce3)
+    }
+
+  /* Navbar */
+    .navbar{
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      grid-area: navb;
+      background: #134670;
+      overflow: hidden;
+    }
+    .navb-item{
+      margin: 0 15px;
+      z-index: 4;
+      filter: drop-shadow(0 15px 15px black)
+    }
+    .tool-item{
+      margin: 0 10px;
+      font-family: sans-serif;
+      color: #fff;
+    }
+    .settings{
+      margin-right: 80px;
+    }
+    .backgrounds{
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+    }
+    .icon-background-stripes{
+      z-index: 2;
+      top:0;
+    }
+    .icon-background-shadow{
+      z-index: 4;
+    }
+    .fade-left-shadow{
+      z-index: 3;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .fade-right-shadow{
+      z-index: 3;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  
+  /* Searchbar */
+    .searchbar{
+      grid-area: sbar;
+      background: #33cc66;
+      border-radius: 7px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .searchbar h1{
+      color: #fff;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+    }
+    .sbar-child{
+      margin: 0 20px;
+    }
+    #input-wrapper{
+      position: relative;
+    }
+    #sbar-input{
+      border: 1px solid #2db55b;
+      border-radius: 3px;
+      height: 28px;
+      width: 258px;
+      color: #000;
+      padding: 4px;
+      font-size: 1.1em;
+    }
+
+  /* Announcements */
+  .announcements{
+    grid-area: anno;
+    background: rgb(220, 255, 155)
+  }
+  .tasks{
+    grid-area: task;
+    background: rgb(255, 137, 137)
+  }
+  .analytics-1{
+    grid-area: anl1;
+    background: rgb(255, 200, 250)
+  }
+  .recommendations{
+    grid-area: reco;
+    background: #b0ffb7;
+  }
+  .analytics-2{
+    grid-area: anl2;
+    background: #ff5757;
+  }
+  .footer{
+    grid-area: foot;
+    background: rgb(170, 255, 229)
+  }
+}
+
+/* global */
+body{
+  margin: 0;
+}
