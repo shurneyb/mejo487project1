@@ -8,17 +8,17 @@
     'navb';
   }
   .content{
-    padding: 2px;
-    grid-gap: 2px;
+    padding: 1px;
+    grid-gap: 1px;
     background: #ececec;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50px 300px 450px 200px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 50px 750px 200px;
     grid-template-areas: 
     'anno anno anno'
-    'task anl1 anl1'
-    'reco anl2 anl2'
-    'foot foot foot'
+    'task anly anly'
+    'task anly anly'
+    'advs advs advs'
   }
 }
 /* End Grids */
@@ -42,10 +42,6 @@ h3{
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.no-border{
-  border: 0 !important; /*important so it doesn't get overridden
-                         while still keeping global syles at the top*/
 }
 /* End Global */
 
@@ -170,7 +166,7 @@ h3{
     width: 80%;
     margin: auto;
     padding: 15px;
-    background: linear-gradient(#f6f6f6, #ffffff);
+    background: linear-gradient(to top, #ffffff 75%, #f6f6f6);
     border-radius: 8px;
   }
   /* Announcements */
@@ -206,7 +202,6 @@ h3{
       margin-right: 6px;
     }
     #lorem{
-      font-family: sans-serif;
       color: #797979;
     }
 
@@ -228,7 +223,13 @@ h3{
   .task-row{
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #e4e4e4;
+    border-bottom: 1px solid #ececec;
+    transition: 110ms ease-in-out;
+  }
+  .task-row:hover{
+    filter: grayscale(100%);
+    transition: 110ms ease-in-out;
+    cursor: pointer;
   }
   .circle{
     height: 30px;
@@ -241,7 +242,7 @@ h3{
     margin: 15px;
   }
   .task-box{
-    border: 1px solid #e4e4e4;
+    border: 1px solid #ececec;;
     border-radius: 3px;
     color: #2498f4;
     font-family: 'Mukta Malar', sans-serif;
@@ -255,30 +256,50 @@ h3{
   }
   /* End Tasks */
 
-  /* Analytics-1 */
-    .analytics-1{
-      grid-area: anl1;
-      background: #fff;
-    }
-  /* End Analytics-1 */
-
   /* Recommendations */
-    .recommendations{
-      grid-area: reco;
-      background: #fff;
+    #rec-header{
+      padding: 18px 0 15px 15px;
+      border-bottom: 1px solid #ececec;;
+    }
+    .rec-row{
+      display: flex;
+      align-items: center;
+      border-bottom: 1px dotted #ececec;;
+      margin: 4px 10px 0 10px;
+      padding-bottom: 10px;
+    }
+    .rec-row:hover{
+      filter: grayscale(100%);
+      transition: 110ms ease-in-out;
+      cursor: pointer;
+    }
+    .rec-wrapper{
+      display: flex;
+      flex-direction: column;
+      margin-right: 10px;
+      min-width: 22px;
+    }
+    .rec-small-text{
+      font-size: .6em;
+      color: #797979;
+      font-weight: bold;
+    }
+    .rec-text{
+      color: #797979;
+      font-weight: bold;
     }
   /* End Recommendations */
 
-  /* Analytics-2 */
-    .analytics-2{
-      grid-area: anl2;
+  /* Analytics */
+    .analytics-grid{
+      grid-area: anly;
       background: #fff;
     }
-  /* End Analytics-2 */
+  /* End Analytics */
 
   /* Footer */
-    .footer{
-      grid-area: foot;
+    .advertisements{
+      grid-area: advs;
       background: #fff;
     }
   /* End Footer */
