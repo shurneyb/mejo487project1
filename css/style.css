@@ -1,37 +1,66 @@
+/* Grids */
 @supports (grid-area:auto){
-
-  /* Grids */
-    .navbars{
-      display: grid;
-      grid-template-rows: 40px 110px;
-      grid-template-areas: 
-      'tool'
-      'navb';
-    }
-    .content{
-      width: 85%;
-      margin: auto;
-      margin-top: 20px;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 75px 20px 35px 300px 450px 200px;
-      grid-template-areas: 
-      'sbar sbar sbar'
-      '.    .    .   '
-      'anno anno anno'
-      'task anl1 anl1'
-      'reco anl2 anl2'
-      'foot foot foot'
-    }
+  .navbars{
+    display: grid;
+    grid-template-rows: 45px 110px;
+    grid-template-areas: 
+    'tool'
+    'navb';
+  }
+  .content{
+    padding: 2px;
+    grid-gap: 2px;
+    background: #ececec;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 300px 450px 200px;
+    grid-template-areas: 
+    'anno anno anno'
+    'task anl1 anl1'
+    'reco anl2 anl2'
+    'foot foot foot'
+  }
+}
+/* End Grids */
   
+/* Global */
+body{
+  margin: 0;
+}
+/* End Global */
+
+/* Navbars */
+
   /* Toolbar */
     .toolbar{
+      position: relative;
       display: flex;
       align-items: center;
       justify-content: flex-end;
       grid-area: tool;
       background: linear-gradient(#2498f4, #208ce3)
     }
+    #social-stream{
+      position: absolute;
+      left: 100px;
+      font-size: 1.5em;
+    }
+    .horiz-line{
+      height: 28px;
+      width: 2px;
+      border-right: 1px solid #208ce3;
+      margin: 0 10px;
+    }
+    .tool-text{
+      margin: 0;
+      font-family: sans-serif;
+      font-weight: bold;
+      color: #fff;
+    }
+    .settings{
+      margin-right: 80px;
+    }
+  /* End Toolbar */
 
   /* Navbar */
     .navbar{
@@ -47,14 +76,6 @@
       margin: 0 15px;
       z-index: 4;
       filter: drop-shadow(0 15px 15px black)
-    }
-    .tool-item{
-      margin: 0 10px;
-      font-family: sans-serif;
-      color: #fff;
-    }
-    .settings{
-      margin-right: 80px;
     }
     .backgrounds{
       position: absolute;
@@ -82,12 +103,15 @@
       top: 0;
       right: 0;
     }
+  /* End Navbar */
   
   /* Searchbar */
     .searchbar{
-      grid-area: sbar;
+      width: 82.5%;
+      height: 75px;
+      margin: 15px auto;
       background: #33cc66;
-      border-radius: 7px;
+      border-radius: 6px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -112,35 +136,93 @@
       padding: 4px;
       font-size: 1.1em;
     }
+    .search{
+      position: absolute;
+      bottom: 8px;
+      right: 30px;
+    }
+  /* End Searchbar */
 
-  /* Announcements */
-  .announcements{
-    grid-area: anno;
-    background: rgb(220, 255, 155)
+/* End of Navbars*/
+
+/* Content */
+  #content-wrapper{
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+    background: linear-gradient(#f6f6f6, #ffffff);
+    border-radius: 8px;
   }
+  /* Announcements */
+    .announcements{
+      grid-area: anno;
+      display: flex;
+      justify-content: space-between;
+      background: #fff;
+    }
+    .ann-box{
+      display: flex;
+      align-items: center;
+    }
+    #ann-title-wrapper{
+      border-right: 1px solid #ececec;
+      height: 100%;
+      width: 20%;
+    }
+    #ann-title{
+      font-size: .8em;
+      margin-left: 18px;
+      font-family: sans-serif;
+      font-weight: bold;
+      color: #fe8f35;
+    }
+    #arrows-wrapper{
+      border-left: 1px solid #ececec;
+      height: 100%;
+      width: 7%;
+      justify-content: center;
+    }
+    .arrow-left{
+      margin-right: 6px;
+    }
+    #lorem{
+      font-family: sans-serif;
+      color: #797979;
+    }
+
+  /* End Announcements */
+
+  /* Tasks */
   .tasks{
     grid-area: task;
-    background: rgb(255, 137, 137)
+    background: #fff;
   }
-  .analytics-1{
-    grid-area: anl1;
-    background: rgb(255, 200, 250)
-  }
-  .recommendations{
-    grid-area: reco;
-    background: #b0ffb7;
-  }
-  .analytics-2{
-    grid-area: anl2;
-    background: #ff5757;
-  }
-  .footer{
-    grid-area: foot;
-    background: rgb(170, 255, 229)
-  }
-}
+  /* End Tasks */
 
-/* global */
-body{
-  margin: 0;
-}
+  /* Analytics-1 */
+    .analytics-1{
+      grid-area: anl1;
+      background: #fff;
+    }
+  /* End Analytics-1 */
+
+  /* Recommendations */
+    .recommendations{
+      grid-area: reco;
+      background: #fff;
+    }
+  /* End Recommendations */
+
+  /* Analytics-2 */
+    .analytics-2{
+      grid-area: anl2;
+      background: #fff;
+    }
+  /* End Analytics-2 */
+
+  /* Footer */
+    .footer{
+      grid-area: foot;
+      background: #fff;
+    }
+  /* End Footer */

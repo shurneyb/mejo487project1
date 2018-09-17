@@ -5,16 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="css/style.css"/>
   <link rel="stylesheet" href="css/spritesheet.css"/>
-
+  
   <!-- Roboto font -->
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
   <div class="navbars">
     <div class="toolbar">
-      <p class="tool-item">MINI of Raleigh</p>
-      <div class="help tool-item"></div>
-      <div class="settings tool-item"></div>
+      <p id="social-stream" class="tool-text">social stream</p>
+      <p class="tool-text">MINI of Raleigh</p>
+      <div class="horiz-line"></div>
+      <div class="help"></div>
+      <div class="horiz-line"></div>
+      <div class="settings"></div>
     </div>
     <div class="navbar">
       <div class="icon-background-stripes backgrounds"></div>
@@ -29,31 +32,42 @@
       <div class="analytics navb-item"></div>
     </div>
   </div>
-  <div class="content">
-    <div class="searchbar">
-      <h1 class="sbar-child">Dashboard</h1>
-      <div id="input-wrapper">
-        <input class="sbar-child" id="sbar-input" type="text">
-        
+  <div class="searchbar">
+    <h1 class="sbar-child">Dashboard</h1>
+    <div id="input-wrapper">
+      <input class="sbar-child" id="sbar-input" type="text">
+      <div class="search"></div>
+    </div>
+  </div>
+  <div id="content-wrapper">
+    <div class="content">
+      <div class="announcements">
+        <div id="ann-title-wrapper" class="ann-box">
+          <p id="ann-title">ANNOUNCEMENTS</p>
+        </div>
+        <div id="lorem-wrapper" class="ann-box">
+          <p id="lorem">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
+        </div>
+        <div id="arrows-wrapper" class="ann-box">
+          <div class="arrow-left"></div>
+          <div class="arrow-right"></div>
+        </div>
       </div>
-    </div>
-    <div class="announcements">
-      announcements
-    </div>
-    <div class="tasks">
-      tasks
-    </div>
-    <div class="analytics-1">
-      analytics1
-    </div>
-    <div class="recommendations">
-      recommendations
-    </div>
-    <div class="analytics-2">
-      analytics-2
-    </div>
-    <div class="footer">
-      footer
+      <div class="tasks">
+        tasks
+      </div>
+      <div class="analytics-1">
+        analytics1
+      </div>
+      <div class="recommendations">
+        recommendations
+      </div>
+      <div class="analytics-2">
+        analytics-2
+      </div>
+      <div class="footer">
+        footer
+      </div>
     </div>
   </div>
 </body>
