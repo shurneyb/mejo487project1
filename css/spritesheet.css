@@ -13,7 +13,7 @@
 .twitter, .youtube-c, .youtube, .ribbon-left, .ribbon-right, 
 .tip, .tip-shadow, .date-arrow
 { display: inline-block; background: url('../img/spritesheet.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
- 
+
 .icon-background-stripes { background-position: -1px -0px; width: 1200px; height: 75px; }
 .icon-background-shadow { background-position: -1px -76px; width: 927px; height: 110px; }
 .graph { background-position: -1px -187px; width: 420px; height: 187px; }
@@ -26,30 +26,31 @@
 .customers-orange { background-position: -691px -449px; width: 214px; height: 223px; }
 .channels { background-position: -216px -375px; width: 184px; height: 240px; }
 .channels-no-tooltip { background-position: -906px -459px; width: 101px; height: 240px; }
-.customers:hover { background-position: -929px -76px; width: 62px; height: 42px; }
-.customers { background-position: -992px -76px; width: 62px; height: 42px; }
+.customers-active { background-position: -929px -76px; width: 62px; height: 42px; }
+.customers-active:hover { background-position: -992px -76px; width: 62px; height: 42px; }
 .icon-shadow { background-position: -1055px -76px; width: 60px; height: 5px; }
-.dashboard:hover { background-position: -1116px -76px; width: 58px; height: 58px; }
-.dashboard { background-position: -1055px -82px; width: 58px; height: 58px; }
-.messages:hover { background-position: -929px -119px; width: 57px; height: 48px; }
-.messages { background-position: -987px -119px; width: 57px; height: 48px; }
-.promotions:hover { background-position: -1114px -135px; width: 50px; height: 50px; }
-.promotions { background-position: -1045px -141px; width: 50px; height: 50px; }
-.pagecreator:hover { background-position: -1096px -186px; width: 45px; height: 50px; }
-.pagecreator { background-position: -1142px -186px; width: 45px; height: 50px; }
-.analytics:hover { background-position: -1021px -192px; width: 42px; height: 50px; }
-.analytics { background-position: -1064px -237px; width: 42px; height: 50px; }
+.dashboard-active { background-position: -1116px -76px; width: 58px; height: 58px; }
+.dashboard-active:hover { background-position: -1055px -82px; width: 58px; height: 58px; }
+.messages-active { background-position: -929px -119px; width: 57px; height: 48px; }
+.messages-active:hover { background-position: -987px -119px; width: 57px; height: 48px; }
+.promotions-active { background-position: -1114px -135px; width: 50px; height: 50px; }
+.promotions-active:hover { background-position: -1045px -141px; width: 50px; height: 50px; }
+.pagecreator-active { background-position: -1096px -186px; width: 45px; height: 50px; }
+.pagecreator-active:hover { background-position: -1142px -186px; width: 45px; height: 50px; }
+.analytics-active { background-position: -1021px -192px; width: 42px; height: 50px; }
+.analytics-active:hover { background-position: -1064px -237px; width: 42px; height: 50px; }
 .avatar { background-position: -1107px -237px; width: 40px; height: 40px; }
 .marker { background-position: -929px -168px; width: 40px; height: 10px; }
 .popup { background-position: -1165px -135px; width: 32px; height: 43px; }
-.checked { background-position: -1175px -76px; width: 23px; height: 21px; }
+.checkbox:active { background-position: -1175px -76px; width: 23px; height: 21px; }
+.checkbox:focus { background-position: -1175px -76px; width: 23px; height: 21px; }
 .search { background-position: -1175px -98px; width: 23px; height: 22px; }
 .arrow-left { background-position: -1064px -192px; width: 22px; height: 22px; }
 .arrow-right { background-position: -1148px -237px; width: 22px; height: 22px; }
-.back { background-position: -1171px -237px; width: 22px; height: 50px; }
+.back { background-position: -1171px -237px; width: 67px; height: 50px; }
 .check { background-position: -1064px -215px; width: 22px; height: 21px; }
 .checklist { background-position: -1021px -243px; width: 22px; height: 20px; }
-.next { background-position: -1157px -298px; width: 22px; height: 50px; }
+.next { background-position: -1157px -298px; width: 67px; height: 50px; }
 .help { background-position: -1148px -260px; width: 20px; height: 20px; }
 .settings-gray { background-position: -1021px -264px; width: 20px; height: 20px; }
 .settings { background-position: -1042px -264px; width: 20px; height: 20px; }
@@ -59,13 +60,13 @@
 .article { background-position: -1180px -340px; width: 19px; height: 23px; }
 .checkbox { background-position: -970px -168px; width: 18px; height: 18px; }
 .checklist-shadow { background-position: -1096px -141px; width: 16px; height: 12px; }
-.facebook-c { background-position: -1096px -154px; width: 16px; height: 16px; }
+.facebook:hover { background-position: -1096px -154px; width: 16px; height: 16px; }
 .facebook { background-position: -989px -168px; width: 16px; height: 16px; }
-.foursquare-c { background-position: -1006px -168px; width: 16px; height: 16px; }
+.foursquare:hover { background-position: -1006px -168px; width: 16px; height: 16px; }
 .foursquare { background-position: -1023px -168px; width: 16px; height: 16px; }
-.twitter-c { background-position: -1044px -243px; width: 16px; height: 16px; }
+.twitter:hover { background-position: -1044px -243px; width: 16px; height: 16px; }
 .twitter { background-position: -1107px -278px; width: 16px; height: 16px; }
-.youtube-c { background-position: -1124px -278px; width: 16px; height: 16px; }
+.youtube:hover { background-position: -1124px -278px; width: 16px; height: 16px; }
 .youtube { background-position: -1141px -281px; width: 16px; height: 16px; }
 .ribbon-left { background-position: -1157px -349px; width: 15px; height: 40px; }
 .ribbon-right { background-position: -1173px -364px; width: 15px; height: 40px; }

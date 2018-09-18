@@ -12,31 +12,50 @@
   <link href="https://fonts.googleapis.com/css?family=Mukta+Malar" rel="stylesheet">
 </head>
 <body>
-  <!---->
+  <!-- Navbars-->
   <div class="navbars">
     <div class="toolbar">
       <p id="social-stream" class="tool-text">social stream</p>
-      <p class="tool-text">MINI of Raleigh</p>
-      <div class="horiz-line"></div>
-      <div class="help"></div>
-      <div class="horiz-line"></div>
-      <div class="settings"></div>
+      <p class="tool-text grow">MINI of Raleigh</p>
+      <div class="line"></div>
+      <div class="help grow"></div>
+      <div class="line"></div>
+      <div class="settings grow"></div>
     </div>
-    <!---->
+    <!-- Navbar -->
     <div class="navbar">
       <div class="icon-background-stripes backgrounds"></div>
       <div class="icon-background-shadow backgrounds"></div>
       <div class="fade-left-shadow"></div>
       <div class="fade-right-shadow"></div>
-      <div class="dashboard navb-item"></div>
-      <div class="customers navb-item"></div>
-      <div class="messages navb-item"></div>
-      <div class="promotions navb-item"></div>
-      <div class="pagecreator navb-item"></div>
-      <div class="analytics navb-item"></div>
+      <div class="navb-item2">
+        <div class="dashboard-active nav-icon"></div>
+        <div class="icon-shadow nav-icon"></div>
+        <div class="marker nav-icon"></div>
+      </div>
+      <div class="navb-item">
+        <div class="customers-active nav-icon"></div>
+        <div class="icon-shadow nav-icon"></div>
+      </div>
+      <div class="navb-item">
+        <div class="messages-active nav-icon"></div>
+        <div class="icon-shadow nav-icon"></div>
+      </div>
+      <div class="navb-item">
+        <div class="promotions-active nav-icon"></div>
+        <div class="icon-shadow nav-icon"></div>
+      </div>
+      <div class="navb-item">
+        <div class="pagecreator-active nav-icon"></div>
+        <div class="icon-shadow nav-icon"></div>
+      </div>
+      <div class="navb-item">
+        <div class="analytics-active nav-icon"></div>
+        <div class="icon-shadow nav-icon"></div>
+      </div>
     </div>
   </div>
-  <!---->
+  <!-- Searchbar -->
   <div class="searchbar">
     <h1 class="sbar-child">Dashboard</h1>
     <div id="input-wrapper">
@@ -45,7 +64,7 @@
     </div>
   </div>
   <div id="content-wrapper">
-    <!---->
+    <!-- Content -->
     <div class="content">
       <div class="announcements">
         <div id="ann-title-wrapper" class="ann-box">
@@ -55,15 +74,15 @@
           <p id="lorem">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
         </div>
         <div id="arrows-wrapper" class="ann-box">
-          <div class="arrow-left"></div>
-          <div class="arrow-right"></div>
+          <div class="arrow-left grow"></div>
+          <div class="arrow-right grow"></div>
         </div>
       </div>
       <!-- Tasks -->
       <div class="tasks">
         <div id="task-header">
           <h2>Tasks</h2>
-          <div class="settings-gray"></div>
+          <div class="settings-gray grow"></div>
         </div>
         <div class="task-row">
           <div class="circle flex-center">
@@ -152,14 +171,126 @@
           </div>
         </div>
       </div>
+      <!-- Analytics -->
       <div class="analytics-grid">
-        analytics
-      </div>
-      <!-- Advertisements -->
-      <div class="advertisements">
-        footer
+        <div id="anly-header">
+          <div id="anly-title"><h2>Analytics</h2></div>
+        </div>
+        <div id="date">
+          <h4>ACTIVITY</h4>
+          <div id="date-box-wrapper" class="pointer">
+            <select id="date-box" class="pointer">
+              <option value="date1">06/28/11 - 07/21/11</option>
+              <option value="date2">07/21/11 - 08/14/11</option>
+              <option value="date3">08/14/11 - 09/07/11</option>
+              <option value="date4">09/07/11 - end of time</option>
+            </select>
+            <div id="date-arrow-wrapper">
+              <div class="date-arrow"></div>
+            </div>
+          </div>
+        </div>
+        <div id="chart-wrapper">
+          <div class="graph"></div>
+          <div class="channels-no-tooltip"></div>
+        </div>
+        <div id="checkboxes" class="flex-center">
+          <div class="checkbox"></div>
+          <div id="facebook-text" class="soc-med">
+            Facebook
+          </div>
+          <div class="checkbox"></div>
+          <div id="twitter-text" class="soc-med">
+            Twitter
+          </div>
+          <div class="checkbox"></div>
+          <div id="foursquare-text" class="soc-med">
+            Foursquare
+          </div>
+          <div class="checkbox"></div>
+          <div id="google-text" class="soc-med">
+            Google+
+          </div>
+        </div>
+        <div id="cust-cont">
+          <div id="contacts" class="card grayscale">
+            <span class="number">75 CONTACTS</span>
+            <span class="influencers">4 INFLUENCERS</span>
+            <div class="ribbon-left ribbon"></div>
+            <div class="contacts"></div>
+            <div class="ribbon-right ribbon"></div>
+          </div>
+          <div id="customers" class="card grayscale">
+            <span class="number">17 CUSTOMERS</span>
+            <span class="influencers">0 INFLUENCERS</span>
+            <div class="ribbon-left ribbon"></div>
+            <div class="customers-orange"></div>
+            <div class="ribbon-right ribbon"></div>
+          </div>
+        </div>
+        <div id="did-you-know" class="flex-center">
+          <div id="did-box">
+            <div class="back grayscale"></div>
+            <p>DID YOU KNOW?<br>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div class="next grayscale"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Advertisements -->
+        <div class="advertisements">
+          <div class="ad right pointer">
+            <div class="watch"></div>
+            <div id="ad1-text">
+              <h4>Watch what<br>you say.</h4>
+              <p>Message Management</p>
+            </div>
+          </div>
+          <div class="ad flex-center pointer">
+            <div class="see"></div>
+            <p id="ad2-text">See what others are doing with us.</p>
+          </div>
+          <div class="ad pointer" id="ad3">
+            <div class="version"></div>
+            <h4 id="ad3-text">Version 2.0<br>is coming</h4>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
+  <!-- Footer -->
+  <div class="footer">
+    <p class="footer-text">Tutorials</p>
+    <div class="line2"></div>
+    <p class="footer-text">Support</p>
+    <div class="line2"></div>
+    <p class="footer-text">Blog</p>
+    <div class="line3"></div>
+    <p class="footer-sentence">
+      <a href="#" class="blue-text">
+        Ariel Winter
+      </a> likes your 
+      <a href="##">
+        Win A Cooper Sweepstakes
+      </a>
+      Promotion
+    </p>
+    <img id="pullup" src="img/pullup.png">
+    <div class="line3"></div>
+    <div class="avatar"></div>
+    <p class="footer-sentence">
+      <a href="###">
+        Logout
+      </a>
+    </p>
+    <div class="line3"></div>
+    <div class="facebook sm-icon"></div>
+    <div class="twitter sm-icon"></div>
+    <div class="foursquare sm-icon"></div>
+    <div class="youtube sm-icon"></div>
+    <div class="line3"></div>
   </div>
 </body>
 </html>
