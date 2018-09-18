@@ -581,7 +581,7 @@ a:visited{
       margin-bottom: 20px;
       background: #ececec;
       display: grid;
-      grid-template-rows: 150px 650px 950px 225px;
+      grid-template-rows: 150px 600px 1300px 580px;
       grid-template-areas: 
       'anno'
       'task'
@@ -686,7 +686,57 @@ a:visited{
     #date{
       margin: 0;
     }
+    #date h4{
+      margin-left: 10px;
+    }
+    #date-box-wrapper{
+      margin-right: 10px;
+    }
+    #chart-wrapper{
+      flex-direction: column;
+    }
+    .graph{
+      transform: scale(.75);
+    }
+    .channels-no-tooltip{
+      transform: scale(.75);
+      margin: 5px;
+    }
+    #cust-cont{
+      flex-direction: column;
+    }
+    .card{
+      margin-bottom: 20px;
+    }
+    .soc-med{
+      padding: 1px 2px 2px 2px;
+    }
+    #did-box{
+      max-width: 95vw;
+      margin: 10px;
+    }
+    #did-box p{
+      margin: 10px 18px;
+    }
+    .back{
+      width: 140px !important;
+    }
+    .next{
+      width: 110px !important;
+    }
   /* Advertisements */
-
+    .advertisements{
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    .ad{
+      margin: 15px 0;
+    }
   /* Footer */
+    .hide{
+      display: none;
+    }
+    .line3{
+      margin: 0 10px;
+    }
 }
