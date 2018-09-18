@@ -213,6 +213,7 @@ a:visited{
     background: linear-gradient(to top, #ffffff 75%, #f6f6f6);
     border-radius: 8px;
   }
+
   /* Announcements */
     .announcements{
       grid-area: anno;
@@ -339,129 +340,142 @@ a:visited{
       display: flex;
       flex-direction: column;
     }
-    #anly-title{
-      margin: 35px 0 20px 35px;
-    }
-    #date{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin: 0 225px 0 45px;
-    }
-    #date h4{
-      font-size: .8em;
-      color: #b0b0b0;
-    }
-    #date-box-wrapper{
-      border: 1px solid #cecece;
-      border-radius: 1px;
-      position: relative;
-    }
-    #date-box{
-      color: #797979;
-      font-weight: bold;
-      font-family: 'Mukta Malar', sans-serif;
-      font-size: 1em;
-      border: 0;
-    }
-    #date-arrow-wrapper{
-      position: absolute;
-      right: 6px;
-      bottom: 6px;
-      background: #fff;
-    }
-    #chart-wrapper{
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-    }
-    .pies{
-      display: flex;
-      flex-direction: column;
-      margin: 0 20px 75px 0;
-      border-left: 2px solid #d8d8d8;
-    }
-    .pie-text{
-      color: #b0b0b0;
-      font-weight: bold;
-      margin: 0px 12px;
-      font-size: .8em;
-    }
-    .pie{
-      margin: 6px 20px;
-    }
-    #checkboxes{
-      padding-bottom: 38px;
-      border-bottom: 1px solid #ececec;
-      margin-bottom: 25px;
-    }
-    .soc-med{
-      border-radius: 4px;
-      padding: 1px 11px 2px 8px;
-      color: #fff;
-      font-weight: bold;
-      font-size: .7em;
-      margin-right: 12px;
-    }
-    #facebook-text{
-      background: #114570;
-    }
-    #twitter-text{
-      background: #2298f4;
-    }
-    #foursquare-text{
-      background: #3a599b;
-    }
-    #google-text{
-      background: #31cc66;
-    }
-    .checkbox{
-      margin-right: 4px;
-      cursor: pointer;
-    }
-    #cust-cont{
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-      padding-bottom: 30px;
-      border-bottom: 1px solid #ececec;
-    }
-    .card{
-      display: flex;
-      align-items: center;
-      position: relative;
-    }
-    .ribbon{
-      margin-bottom: 41px;
-    }
-    .number{
-      position: absolute;
-      top: 68px;
-      left: 18%;
-      color: #fff;
-      font-size: 1.5em;
-    }
-    .influencers{
-      position: absolute;
-      top: 93px;
-      left: 31%;
-      color: #fff;
-      font-size: .8em;
-    }
-    #did-box{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: #2298f4;
-      color: #fff;
-      font-weight: bold;
-      font-size: .85em;
-      margin: 30px 20px;
-      border: 1px solid #fff;
-    }
-    #did-box p{
-      margin: 38px 50px;
-    }
+
+    /* Graphs */
+      #anly-title{
+        margin: 35px 0 20px 35px;
+      }
+      #date{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 225px 0 45px;
+      }
+      #date h4{
+        font-size: .8em;
+        color: #b0b0b0;
+      }
+      #date-box-wrapper{
+        border: 1px solid #cecece;
+        border-radius: 1px;
+        position: relative;
+      }
+      #date-box{
+        color: #797979;
+        font-weight: bold;
+        font-family: 'Mukta Malar', sans-serif;
+        font-size: 1em;
+        border: 0;
+      }
+      #date-arrow-wrapper{
+        position: absolute;
+        right: 6px;
+        bottom: 6px;
+        background: #fff;
+      }
+      .date-arrow{
+        width: 13px !important; /* fixing spritesheet mistake */ 
+      }
+      #chart-wrapper{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .pies{
+        display: flex;
+        flex-direction: column;
+        margin: 0 20px 75px 0;
+        border-left: 2px solid #d8d8d8;
+      }
+      .pie-text{
+        color: #b0b0b0;
+        font-weight: bold;
+        margin: 0px 12px;
+        font-size: .8em;
+      }
+      .pie{
+        margin: 6px 20px;
+      }
+      #checkboxes{
+        padding-bottom: 38px;
+        border-bottom: 1px solid #ececec;
+        margin-bottom: 25px;
+      }
+      .soc-med{
+        border-radius: 4px;
+        padding: 1px 11px 2px 8px;
+        color: #fff;
+        font-weight: bold;
+        font-size: .7em;
+        margin-right: 12px;
+      }
+      #facebook-text{
+        background: #114570;
+      }
+      #twitter-text{
+        background: #2298f4;
+      }
+      #foursquare-text{
+        background: #3a599b;
+      }
+      #google-text{
+        background: #31cc66;
+      }
+      .checkbox{
+        margin-right: 4px;
+        cursor: pointer;
+      }
+    /* End Graphs */
+
+    /* Customers and Contacts */
+      #cust-cont{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #ececec;
+      }
+      .card{
+        display: flex;
+        align-items: center;
+        position: relative;
+      }
+      .ribbon{
+        margin-bottom: 41px;
+      }
+      .number{
+        position: absolute;
+        top: 68px;
+        left: 18%;
+        color: #fff;
+        font-size: 1.5em;
+      }
+      .influencers{
+        position: absolute;
+        top: 93px;
+        left: 31%;
+        color: #fff;
+        font-size: .8em;
+      }
+    /* End Customers and Contacts */
+
+    /* Did You Know */
+      #did-box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #2298f4;
+        color: #fff;
+        font-weight: bold;
+        font-size: .85em;
+        margin: 30px 20px;
+        border: 1px solid #fff;
+      }
+      #did-box p{
+        margin: 38px 50px;
+      }
+    /* End Did You Know */
+
   /* End Analytics */
 
   /* Advertisements */
@@ -536,6 +550,7 @@ a:visited{
       z-index: 1;
       margin: 0 0 10px 15px;
     }
+  /* End Advertisements */
 
 /* Footer */
 .footer{
@@ -575,9 +590,11 @@ a:visited{
   margin: 2px;
   cursor: pointer;
 }
+/* End Footer */
 
-/* Mobile Style */
+/*********** Mobile Styles ***********/
 @media only screen and (max-width: 600px){
+
 /* Grids */
   @supports (grid-area:auto){
     .navbars{
@@ -608,6 +625,7 @@ a:visited{
   body{
     max-width: 100vw;
   }
+/* End Global */
 
 /* Navbars */
 
@@ -621,6 +639,8 @@ a:visited{
     .backgrounds{
       max-width: 100vw;
     }
+  /* End Toolbar */
+
   /* Navbar */
     .navb-item{
       margin: 0;
@@ -631,6 +651,8 @@ a:visited{
     .nav-icon{
       transform: scale(.65);
     }
+  /* End Navbar*/
+
   /* Searchbar */
     .searchbar{
       width: 97.5%;
@@ -666,6 +688,9 @@ a:visited{
     #arrows-wrapper{
       width: 100%;
     }
+  /*End Searchbar */
+
+/* End Navbars */
 
 /* Content */
     #content-wrapper{
@@ -684,69 +709,84 @@ a:visited{
     .task-row{
       max-width: 95vw;
     }
+  /* End Tasks */
 
   /* Recommendations */
     .recommendations{
       max-width: 95vw;
     }
+  /* End Recommendations */
+
   /* Analytics */
     .analytics-grid{
       max-width: 97vw;
     }
-    #anly-title{
-      margin: 5px;
-    }
-    #date{
-      margin: 0;
-    }
-    #date h4{
-      margin-left: 10px;
-    }
-    #date-box-wrapper{
-      margin-right: 10px;
-    }
-    #chart-wrapper{
-      flex-direction: column;
-    }
-    .graph{
-      transform: scale(.75);
-    }
-    .pies{
-      flex-direction: row;
-      margin: 0 0 15px 0;
-      border-left: 0;
-    }
-    .pie-group{
-      text-align: center;
-    }
-    .pie{
-      margin: 6px 20px;
-    }
-    #checkboxes{
-      margin: 0 2px 25px 2px;
-    }
-    #cust-cont{
-      flex-direction: column;
-    }
-    .card{
-      margin-bottom: 20px;
-    }
-    .soc-med{
-      padding: 1px 2px 2px 2px;
-    }
-    #did-box{
-      max-width: 95vw;
-      margin: 10px;
-    }
-    #did-box p{
-      margin: 10px 18px;
-    }
-    .back{
-      width: 140px !important;
-    }
-    .next{
-      width: 110px !important;
-    }
+
+    /* Graphs */
+      #anly-title{
+        margin: 5px;
+      }
+      #date{
+        margin: 0;
+      }
+      #date h4{
+        margin-left: 10px;
+      }
+      #date-box-wrapper{
+        margin-right: 10px;
+      }
+      #chart-wrapper{
+        flex-direction: column;
+      }
+      .graph{
+        transform: scale(.75);
+      }
+      .pies{
+        flex-direction: row;
+        margin: 0 0 15px 0;
+        border-left: 0;
+      }
+      .pie-group{
+        text-align: center;
+      }
+      .pie{
+        margin: 6px 20px;
+      }
+      #checkboxes{
+        margin: 0 2px 25px 2px;
+      }
+      .soc-med{
+        padding: 1px 2px 2px 2px;
+      }
+    /* End Graphs */
+
+    /* Customers and Contacts */
+      #cust-cont{
+        flex-direction: column;
+      }
+      .card{
+        margin-bottom: 20px;
+      }
+    /* End Customers and Contacts */
+
+    /* Did You Know */
+      #did-box{
+        max-width: 95vw;
+        margin: 10px;
+      }
+      #did-box p{
+        margin: 10px 18px;
+      }
+      .back{
+        width: 140px !important; /* fixing spritesheet mistake */ 
+      }
+      .next{
+        width: 110px !important; /* fixing spritesheet mistake */ 
+      }
+    /* End Did You Know */
+    
+  /* End Analytics */
+
   /* Advertisements */
     .advertisements{
       flex-direction: column;
@@ -755,6 +795,8 @@ a:visited{
     .ad{
       margin: 15px 0;
     }
+  /* End Advertisements */
+
   /* Footer */
     .hide{
       display: none;
@@ -762,4 +804,5 @@ a:visited{
     .line3{
       margin: 0 10px;
     }
+  /* End Footer */
 }
